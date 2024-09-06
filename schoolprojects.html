@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tanner | About</title>
+    <link rel="stylesheet" type="text/css" href="styles/style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  </head>
+
+  <body>
+    <div class="topnav" id="myTopnav" style="z-index:1">
+      <a href="index.html" class="smallestwidetext">HOME</a>
+      <a href="about.html" class="smallestwidetext">ABOUT</a>
+      <a href="faqs.html" class="smallestwidetext">FAQS</a>
+      <a href="contact.html" class="smallestwidetext">CONTACT</a>
+      <a href="photography.html" class="smallestwidetext">PHOTOGRAPHY</a>
+      <a href="schoolprojects.html" class="smallestwidetext">SCHOOL PROJECTS</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <script>
+      function myFunction1() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+        <script>
+          window.onscroll = function() {myFunction2()};
+          
+          var navbar = document.getElementById("myTopnav");
+          var sticky = navbar.offsetTop;
+          
+          function myFunction2() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }
+          </script>
+    <div class="content" style="max-width:2000px;margin-top:46px">
+      <img
+        src="images/school-projects-header-image.jpg"
+        width="100%"
+        height="auto"
+        alt="Header Image"
+      />
+
+      <div class="black padding64" id="home">
+        <div class="containter content">
+          <h1 class="widetext centertext" style="font-size:72px;">SCHOOL PROJECT LINKS</h1>
+          <p class="centertext opacity smallestwidetext">
+            <i>Anything I do in class, I will put here for you to see. Click on a link to visit the site.</i>
+          </p>
+          <br />
+          <hr align="center" />
+          <br />
+          <center>
+          <p>
+              <a href="imgslider.html" target="_blank" class="smallestwidetext" style="font-size:32px;">IMAGE SLIDER</a>
+          </p>
+        </center>
+        </div>
+      </div>
+
+      <div class="white padding64" id="footer">
+        <div class="containter content">
+          <p class="centertext opacity smallestwidetext">
+            <i>© Copyright 2020 - Tanner Morlan</i>
+          </p>
+          <hr align="center" style="width:20%" />
+          <br />
+          <div class="socialmediastyle">
+            <a href="https://instagram.com/tanner.morlan/" target="_blank"
+              ><i class="fa fa-instagram opacity" style="color:black"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

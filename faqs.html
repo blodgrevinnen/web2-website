@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tanner | FAQS</title>
+    <link rel="stylesheet" type="text/css" href="styles/style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  </head>
+
+  <body>
+    <div class="topnav" id="myTopnav" style="z-index:1">
+      <a href="index.html" class="smallestwidetext">HOME</a>
+      <a href="about.html" class="smallestwidetext">ABOUT</a>
+      <a href="faqs.html" class="smallestwidetext">FAQS</a>
+      <a href="contact.html" class="smallestwidetext">CONTACT</a>
+      <a href="photography.html" class="smallestwidetext">PHOTOGRAPHY</a>
+      <a href="schoolprojects.html" class="smallestwidetext">SCHOOL PROJECTS</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <script>
+      function myFunction1() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+        <script>
+          window.onscroll = function() {myFunction2()};
+          
+          var navbar = document.getElementById("myTopnav");
+          var sticky = navbar.offsetTop;
+          
+          function myFunction2() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }
+          </script>
+    <div class="content" style="max-width:2000px;margin-top:46px">
+      <img
+        src="images/faqs-header-image.jpg"
+        width="100%"
+        height="auto"
+        alt="Header Image"
+      />
+
+      <div class="black" id="home">
+        <div class="containter content padding64">
+          <h1 class="widetext centertext" style="font-size:72px;">FAQS</h1>
+          <p class="centertext opacity smallestwidetext">
+            <i>Frequently asked questions:</i>
+          </p>
+          <br />
+          <hr align="center" />
+          <br />
+
+          <ul class="ul white text-black" style="margin-left:25%">
+            <li class="padding-8">
+              Q: Do you Design websites for people?
+              <span class="tag" style="float:right">
+                A: I don't currently, but it will come in the future.</span
+              >
+            </li>
+            <hr style="max-width:100%;color:#808080;opacity:50%;" />
+            <li class="padding-8">
+              Q: Do you enjoy web design?
+              <span class="tag" style="float:right">
+                A: I love web design. It's really fun and interesting seeing the
+                things I can make.</span
+              >
+            </li>
+            <hr style="max-width:100%;color:#808080;opacity:50%;" />
+            <li class="padding-8">
+              Q: Do you also know Photoshop?
+              <span class="tag" style="float:right">
+                A: Yes, I am learning Photoshop currently in Mr. Bryant's
+                Digital Design class.</span
+              >
+            </li>
+            <hr style="max-width:100%;color:#808080;opacity:50%;" />
+            <li class="padding-8">
+              Q: Can you make me a website?
+              <span class="tag" style="float:right">
+                Of course, make sure you come prepared with some $$$.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="white padding64" id="footer">
+        <div class="containter content">
+          <p class="centertext opacity smallestwidetext">
+            <i>© Copyright 2020 - Tanner Morlan</i>
+          </p>
+          <hr align="center" style="width:20%" />
+          <br />
+          <div class="socialmediastyle">
+            <a href="https://instagram.com/tanner.morlan/" target="_blank"
+              ><i class="fa fa-instagram opacity" style="color:black"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Tanner | Home</title>
+	<link href="styles/style1.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="images/favicon.png" rel="shortcut icon" type="image/png" />
+</head>
+<body>
+<div class="topnav" id="myTopnav" style="z-index:1"><a class="smallestwidetext" href="index.html">HOME</a> <a class="smallestwidetext" href="about.html">ABOUT</a> <a class="smallestwidetext" href="faqs.html">FAQS</a> <a class="smallestwidetext" href="contact.html">CONTACT</a> <a class="smallestwidetext" href="photography.html">PHOTOGRAPHY</a> <a class="smallestwidetext" href="schoolprojects.html">SCHOOL PROJECTS</a> <a class="icon" href="javascript:void(0);" onclick="myFunction1()"> </a></div>
+<script>
+      function myFunction1() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script><script>
+      window.onscroll = function() {myFunction2()};
+      
+      var navbar = document.getElementById("myTopnav");
+      var sticky = navbar.offsetTop;
+      
+      function myFunction2() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>
+
+<div class="content" style="max-width:2000px;margin-top:46px"><img alt="Header Image" height="auto" src="images/header-image.jpg" width="100%" />
+<div class="black padding64" id="home">
+<div class="containter content">
+<h1 class="widetext centertext" style="font-size:72px;">HOME</h1>
+
+<p class="centertext opacity smallestwidetext"><i>Welcome to My Website.</i></p>
+&nbsp;
+
+<hr align="center" />&nbsp;
+<p class="smallwidetext centertext sidemargins64">Hello, and welcome to Tanner Morlan&#39;s website. This is a WIP and will be worked on throughout the year. This will have things that I learn throughout the year added and will top my progress from last year. Pictures of my websites from last year will be included in their own section so you can see progress has been made since then. Enjoy the website, and make sure to visit again! <i>It won&#39;t dissappoint! :)&nbsp;</i></p>
+</div>
+</div>
+
+<div class="white padding64" id="portfolio">
+<div class="container content">
+<h1 class="widetext centertext" style="font-size:72px;">PORTFOLIO</h1>
+
+<p class="centertext opacity smallestwidetext"><i>Please click on an image to view it larger.</i></p>
+&nbsp;
+
+<hr align="center" />&nbsp;
+<div class="row" style="margin-left:3%">
+<div class="column"><img onclick="myFunction(this);" src="images/portfolio-1.jpg" style="width:100%" /></div>
+
+<div class="column"><img onclick="myFunction(this);" src="images/portfolio-2.jpg" style="width:100%" /></div>
+
+<div class="column"><img onclick="myFunction(this);" src="images/portfolio-3.jpg" style="width:100%" /></div>
+
+<div class="column"><img onclick="myFunction(this);" src="images/portfolio-4.jpg" style="width:100%" /></div>
+</div>
+
+<div class="container-1"><span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span> <img id="expandedImg" style="width:100%" />
+<div id="imgtext"></div>
+</div>
+<script>
+            function myFunction(imgs) {
+              var expandImg = document.getElementById("expandedImg");
+              var imgText = document.getElementById("imgtext");
+              expandImg.src = imgs.src;
+              imgText.innerHTML = imgs.alt;
+              expandImg.parentElement.style.display = "block";
+            }
+          </script></div>
+</div>
+
+<div class="black padding64" id="footer">
+<div class="containter content">
+<p class="centertext opacity smallestwidetext"><i>&copy; Copyright 2020 - Tanner Morlan</i></p>
+
+<hr align="center" style="width:20%" />&nbsp;
+<div class="socialmediastyle"></div>
+</div>
+</div>
+</div>
+</body>
+</html>

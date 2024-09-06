@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tanner | Contact</title>
+    <link rel="stylesheet" type="text/css" href="styles/style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  </head>
+
+  <body>
+    <div class="topnav" id="myTopnav" style="z-index:1">
+      <a href="index.html" class="smallestwidetext">HOME</a>
+      <a href="about.html" class="smallestwidetext">ABOUT</a>
+      <a href="faqs.html" class="smallestwidetext">FAQS</a>
+      <a href="contact.html" class="smallestwidetext">CONTACT</a>
+      <a href="photography.html" class="smallestwidetext">PHOTOGRAPHY</a>
+      <a href="schoolprojects.html" class="smallestwidetext">SCHOOL PROJECTS</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <script>
+      function myFunction1() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+        <script>
+          window.onscroll = function() {myFunction2()};
+          
+          var navbar = document.getElementById("myTopnav");
+          var sticky = navbar.offsetTop;
+          
+          function myFunction2() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }
+          </script>
+    <div class="content" style="max-width:2000px;margin-top:46px">
+      <img
+        src="images/contact-header-image.jpg"
+        width="100%"
+        height="auto"
+        alt="Header Image"
+      />
+
+      <div class="black" id="home">
+        <div class="containter content padding64">
+          <h1 class="widetext centertext" style="font-size:72px;">CONTACT</h1>
+          <p class="centertext opacity smallestwidetext">
+            <i>Contact me by filling out the form below.</i>
+          </p>
+          <br />
+          <hr align="center" />
+          <br />
+
+          <div class="container-2">
+            <form id="contact" action="" method="post">
+              <h3 class="centertext black">Contact Me</h3>
+              <fieldset>
+                <input
+                  placeholder="Name:"
+                  type="text"
+                  tabindex="1"
+                  required
+                  autofocus
+                />
+              </fieldset>
+              <fieldset>
+                <input
+                  placeholder="Email Address:"
+                  type="email"
+                  tabindex="2"
+                  required
+                />
+              </fieldset>
+              <fieldset>
+                <input
+                  placeholder="Phone Number:"
+                  type="tel"
+                  tabindex="3"
+                  required
+                />
+              </fieldset>
+              <fieldset>
+                <textarea
+                  placeholder="Message:"
+                  tabindex="5"
+                  required
+                ></textarea>
+              </fieldset>
+              <fieldset>
+                <button
+                  name="submit"
+                  type="submit"
+                  id="contact-submit"
+                  class="black"
+                  data-submit="Sending"
+                >
+                  Submit
+                </button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="white padding64" id="footer">
+        <div class="containter content">
+          <p class="centertext opacity smallestwidetext">
+            <i>© Copyright 2020 - Tanner Morlan</i>
+          </p>
+          <hr align="center" style="width:20%" />
+          <br />
+          <div class="socialmediastyle">
+            <a href="https://instagram.com/tanner.morlan/" target="_blank"
+              ><i class="fa fa-instagram opacity" style="color:black"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
