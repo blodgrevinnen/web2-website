@@ -7,6 +7,8 @@
 
 ## Website I created in my Web 2 class in 2020!
 
+### All graphics were created by me in Photoshop!
+
 ![homepage.png](img/homepage.png "Homepage")
 
 ## This website uses HTML, CSS, and JavaScript.
